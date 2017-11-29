@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uascent.com.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_dialog_psd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_corner_round"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/DialogTitle"
+        android:text="Password"/>
+
+    <TextView
+        style="@style/TextViewBlackNormal"
+        app:layout_widthPercent="90%w"
+        android:gravity="center_horizontal"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:text="Please Enter Password"
+        android:textSize="@dimen/font_18sp"/>
+
+    <EditText
+        android:id="@+id/et_connect_psd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:inputType="numberPassword"
+        android:maxLength="6"/>
+
+    <uascent.com.percent.support.PercentLinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_marginBottomPercent="3%h"
+        app:layout_marginTopPercent="5%h">
+
+        <TextView
+            android:id="@+id/tv_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/shape_btn_round"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_20sp"
+            android:textStyle="bold"
+            app:layout_heightPercent="12%w"
+            app:layout_widthPercent="26%w"/>
+        <TextView
+            android:id="@+id/tv_dialog_enter"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/shape_btn_round"
+            android:gravity="center"
+            android:text="Enter"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_20sp"
+            android:textStyle="bold"
+            app:layout_heightPercent="12%w"
+            app:layout_widthPercent="26%w"/>
+    </uascent.com.percent.support.PercentLinearLayout>
+</uascent.com.percent.support.PercentLinearLayout>

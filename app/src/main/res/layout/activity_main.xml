@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uascent.com.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- <uascent.com.percent.support.PercentRelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="6dp">
+         <ImageView
+             android:id="@+id/iv_back_icon"
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:src="@mipmap/arrow_icon_left"
+             app:layout_heightPercent="6%w"
+             app:layout_widthPercent="6%w"/>
+
+         <TextView
+             android:id="@+id/tv_back"
+             style="@style/TextViewTag"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/iv_back_icon"
+             android:text="HOME"
+             android:textSize="16sp"
+             android:textStyle="bold"/>
+     </uascent.com.percent.support.PercentRelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_heightPercent="13%h">
+
+        <ImageView
+            android:id="@+id/iv_log"
+            style="@style/ImageViewTopLog"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/logo" />
+
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:src="@drawable/help2" />
+    </RelativeLayout>
+    <!--顶部4个按钮-->
+    <uascent.com.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_marginTopPercent="2%h">
+
+        <ImageView
+            android:id="@+id/iv_main_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_power"
+            app:layout_heightPercent="11%w"
+            app:layout_marginRightPercent="7%w"
+            app:layout_widthPercent="11%w" />
+
+        <ImageView
+            android:id="@+id/iv_main_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/main_setting"
+            app:layout_heightPercent="11%w"
+            app:layout_marginRightPercent="7%w"
+            app:layout_widthPercent="11%w" />
+
+        <ImageView
+            android:id="@+id/iv_main_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_switch"
+            app:layout_heightPercent="11%w"
+            app:layout_marginRightPercent="7%w"
+            app:layout_widthPercent="11%w" />
+
+        <ImageView
+            android:id="@+id/iv_main_ble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_ble"
+            app:layout_heightPercent="11%w"
+            app:layout_widthPercent="11%w" />
+    </uascent.com.percent.support.PercentLinearLayout>
+
+    <!--车辆模型，总共12个点-->
+    <uascent.com.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="4%h">
+
+        <ImageView
+            android:id="@+id/iv_car_model"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/select_atv_white"
+            app:layout_heightPercent="30%w"
+            app:layout_widthPercent="70%w" />
+
+        <ImageView
+            android:id="@+id/iv_select_car"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_car_model"
+            android:src="@mipmap/arrow_icon"
+            app:layout_heightPercent="15%w"
+            app:layout_widthPercent="15%w" />
+
+
+        <Button
+            android:id="@+id/btn_light1"
+            style="@style/MainCircle"
+            android:layout_alignStart="@+id/iv_car_model"
+            android:tag="1"
+            app:layout_marginLeftPercent="7%w" />
+
+        <Button
+            android:id="@+id/btn_light2"
+            style="@style/MainCircle"
+            android:layout_alignStart="@+id/iv_car_model"
+            android:layout_centerVertical="true"
+            android:tag="2"
+            app:layout_marginLeftPercent="7%w" />
+
+        <Button
+            android:id="@+id/btn_light3"
+            style="@style/MainCircle"
+            android:layout_alignBottom="@+id/iv_car_model"
+            android:layout_alignStart="@+id/iv_car_model"
+            android:tag="3"
+            app:layout_marginLeftPercent="7%w" />
+
+        <Button
+            android:id="@+id/btn_light4"
+            style="@style/MainCircle"
+            android:tag="4"
+            app:layout_marginLeftPercent="40%w"
+            app:layout_marginTopPercent="5%w" />
+
+        <Button
+            android:id="@+id/btn_light5"
+            style="@style/MainCircle"
+            android:layout_alignBottom="@+id/iv_car_model"
+            android:tag="5"
+            app:layout_marginBottomPercent="5%w"
+            app:layout_marginLeftPercent="40%w" />
+
+        <Button
+            android:id="@+id/btn_light6"
+            style="@style/MainCircle"
+            android:tag="6"
+            app:layout_marginLeftPercent="54%w"
+            app:layout_marginTopPercent="2%w" />
+
+        <Button
+            android:id="@+id/btn_light7"
+            style="@style/MainCircle"
+            android:layout_alignBottom="@+id/iv_car_model"
+            android:tag="7"
+            app:layout_marginBottomPercent="2%w"
+            app:layout_marginLeftPercent="54%w" />
+
+        <Button
+            android:id="@+id/btn_light8"
+            style="@style/MainCircle"
+            android:tag="8"
+            app:layout_marginLeftPercent="66%w" />
+
+        <Button
+            android:id="@+id/btn_light9"
+            style="@style/MainCircle"
+            android:layout_alignBottom="@+id/iv_car_model"
+            android:layout_centerVertical="true"
+            android:tag="9"
+            app:layout_marginLeftPercent="66%w" />
+
+        <Button
+            android:id="@+id/btn_light10"
+            style="@style/MainCircle"
+            android:layout_alignBottom="@+id/iv_car_model"
+            android:tag="10"
+            app:layout_marginLeftPercent="66%w" />
+
+
+        <Button
+            android:id="@+id/btn_light11"
+            style="@style/MainCircle"
+            android:tag="11"
+            app:layout_marginLeftPercent="80%w" />
+
+        <Button
+            android:id="@+id/btn_light12"
+            style="@style/MainCircle"
+            android:layout_alignBottom="@+id/iv_car_model"
+            android:tag="12"
+            app:layout_marginLeftPercent="80%w" />
+
+    </uascent.com.percent.support.PercentRelativeLayout>
+
+    <uascent.com.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--reset条目-->
+        <uascent.com.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <uascent.com.percent.support.PercentRelativeLayout
+                android:id="@+id/rl_rest"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_corner_rectangle"
+                app:layout_heightPercent="10%w"
+                app:layout_marginPercent="4%h">
+
+                <ImageView
+                    android:id="@+id/iv_rest_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/reset_white_icon"
+                    app:layout_heightPercent="7%w"
+                    app:layout_marginLeftPercent="8%w"
+                    app:layout_widthPercent="7%w"/>
+
+                <TextView
+                    style="@style/TextViewTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_rest_icon"
+                    android:text="Light Location Setup"
+                    android:textSize="@dimen/font_17sp"
+                    app:layout_marginLeftPercent="7%w"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/iv_car_model"
+                    android:src="@mipmap/arrow_icon"
+                    app:layout_heightPercent="9%w"
+                    app:layout_marginRightPercent="3%w"
+                    app:layout_widthPercent="9%w"/>
+            </uascent.com.percent.support.PercentRelativeLayout>
+        </uascent.com.percent.support.PercentRelativeLayout>
+        <!--LED条目-->
+        <uascent.com.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|top">
+
+            <uascent.com.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_corner_rectangle"
+                android:orientation="horizontal"
+                app:layout_heightPercent="10%w"
+                app:layout_marginLeftPercent="4%h"
+                app:layout_marginRightPercent="4%h">
+
+                <ImageView
+                    android:id="@+id/iv_led_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/led_icon"
+                    app:layout_heightPercent="8%w"
+                    app:layout_marginLeftPercent="8%w"
+                    app:layout_widthPercent="8%w"/>
+
+                <TextView
+                    style="@style/TextViewTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_led_icon"
+                    android:text="Individual Terminal ON/OFF"
+                    app:layout_marginLeftPercent="6%w"
+                    app:layout_textSizePercent="5%w"/>
+
+                <ToggleButton
+                    android:id="@+id/tb_led"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/iv_car_model"
+                    android:background="@drawable/selector_toggle_btn"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""
+                    app:layout_heightPercent="8%w"
+                    app:layout_marginRightPercent="3%w"
+                    app:layout_widthPercent="13%w"/>
+
+            </uascent.com.percent.support.PercentRelativeLayout>
+        </uascent.com.percent.support.PercentLinearLayout>
+        <!--Brightness 进度条-->
+        <uascent.com.percent.support.PercentLinearLayout
+            android:id="@+id/ll_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_brightness"
+                style="@style/TextViewTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brightness"
+                app:layout_marginTopPercent="4%h"/>
+
+            <SeekBar
+                android:id="@+id/seekbar_bright"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:progressDrawable="@color/colorWhite"
+                android:thumb="@drawable/seekbar_thumb"
+                app:layout_marginLeftPercent="10%w"
+                app:layout_marginRightPercent="10%w"/>
+
+            <TextView
+                android:id="@+id/tv_flash"
+                style="@style/TextViewTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flash"/>
+
+            <SeekBar
+                android:id="@+id/seekbar_flash"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:progressDrawable="@color/colorWhite"
+                android:thumb="@drawable/seekbar_thumb"
+                app:layout_marginLeftPercent="10%w"
+                app:layout_marginRightPercent="10%w"/>
+        </uascent.com.percent.support.PercentLinearLayout>
+    </uascent.com.percent.support.PercentLinearLayout>
+</uascent.com.percent.support.PercentLinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uascent.com.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_dialog_psd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_corner_round"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/DialogTitle"
+        android:text="Password Reset"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/dimen_26dp"
+        android:layout_marginRight="@dimen/dimen_26dp"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/psd_old"/>
+
+        <EditText
+            android:digits="@string/filter_numb"
+            style="@style/EditTextStyle"
+            android:id="@+id/et_old_psd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Old Password"
+            android:inputType="textPassword"
+            android:maxLength="6"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:textColorHint="@color/colorLowGray"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/cbLaws1"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/checkbox_laws_selector"
+            android:button="@null"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dimen_26dp"
+        android:layout_marginRight="@dimen/dimen_26dp"
+        android:background="@color/colorBlack"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/dimen_26dp"
+        android:layout_marginRight="@dimen/dimen_26dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/psd_new"/>
+
+        <EditText
+            android:digits="@string/filter_numb"
+            android:id="@+id/et_new_psd"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:maxLength="6"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:textColorHint="@color/colorLowGray"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/cbLaws2"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/checkbox_laws_selector"
+            android:button="@null"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dimen_26dp"
+        android:layout_marginRight="@dimen/dimen_26dp"
+        android:background="@color/colorBlack"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/dimen_26dp"
+        android:layout_marginRight="@dimen/dimen_26dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/psd_confirm"/>
+
+        <EditText
+            android:digits="@string/filter_numb"
+            android:id="@+id/et_confirm_psd"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:maxLength="6"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:textColorHint="@color/colorLowGray"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/cbLaws3"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/checkbox_laws_selector"
+            android:button="@null"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dimen_26dp"
+        android:layout_marginRight="@dimen/dimen_26dp"
+        android:background="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_26dp"
+        android:layout_marginRight="@dimen/dimen_26dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="*Password Must Be 6 Numbers"
+        android:textColor="@color/colorBlack"/>
+
+    <uascent.com.percent.support.PercentLinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_marginBottomPercent="3%h"
+        app:layout_marginTopPercent="5%h">
+
+        <TextView
+            android:id="@+id/tv_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/shape_btn_round"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_20sp"
+            android:textStyle="bold"
+            app:layout_heightPercent="12%w"
+            app:layout_widthPercent="26%w"/>
+        <TextView
+            android:id="@+id/tv_dialog_enter"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/shape_btn_round"
+            android:gravity="center"
+            android:text="Enter"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_20sp"
+            android:textStyle="bold"
+            app:layout_heightPercent="12%w"
+            app:layout_widthPercent="26%w"/>
+    </uascent.com.percent.support.PercentLinearLayout>
+</uascent.com.percent.support.PercentLinearLayout>
