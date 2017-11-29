@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uascent.com.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_dialog_warn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_16dp"
+    android:background="@drawable/shape_dialog_corner_round"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Alert"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_20sp"/>
+
+    <uascent.com.percent.support.PercentLinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_marginBottomPercent="3%h"
+        app:layout_marginTopPercent="6%h">
+
+        <TextView
+            android:id="@+id/tv_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/shape_btn_round"
+            android:gravity="center"
+            android:text="Close"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_20sp"
+            android:textStyle="bold"
+            app:layout_heightPercent="12%w"
+            app:layout_widthPercent="26%w"/>
+
+    </uascent.com.percent.support.PercentLinearLayout>
+</uascent.com.percent.support.PercentLinearLayout>

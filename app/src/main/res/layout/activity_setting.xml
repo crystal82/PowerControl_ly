@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uascent.com.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--Low Voltage alarm1-->
+    <uascent.com.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_low_voltage_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%h"
+        app:layout_marginLeftPercent="5%w"
+        app:layout_marginRightPercent="5%w"
+        app:layout_marginTopPercent="10%h">
+        <TextView
+            android:id="@+id/tv_low_alarm"
+            style="@style/TextViewBlackNormal"
+            android:layout_centerVertical="true"
+            android:text="Low Voltage Alarm"/>
+
+        <TextView
+            android:id="@+id/tv_low_alarm_num"
+            style="@style/TextViewBlackNormal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_low_alarm"
+            android:text="(10V)"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow_icon_dark"
+            app:layout_heightPercent="8%w"
+            app:layout_widthPercent="8%w"/>
+
+        <View
+            style="@style/BlackLine"/>
+    </uascent.com.percent.support.PercentRelativeLayout>
+
+    <!--Timing Shutdown-->
+    <uascent.com.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_timing_shutdown"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%h"
+        app:layout_marginLeftPercent="5%w"
+        app:layout_marginRightPercent="5%w"
+        app:layout_marginTopPercent="2%h">
+        <TextView
+            android:id="@+id/tv_timing"
+            style="@style/TextViewBlackNormal"
+            android:layout_centerVertical="true"
+            android:text="Timing Shutdown"/>
+
+        <TextView
+            android:id="@+id/tv_timing_num"
+            style="@style/TextViewBlackNormal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_timing"
+            android:text="(6h)"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow_icon_dark"
+            app:layout_heightPercent="8%w"
+            app:layout_widthPercent="8%w"/>
+
+        <View
+            style="@style/BlackLine"/>
+    </uascent.com.percent.support.PercentRelativeLayout>
+
+    <!--Password Reset-->
+    <uascent.com.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_revise_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%h"
+        app:layout_marginLeftPercent="5%w"
+        app:layout_marginRightPercent="5%w"
+        app:layout_marginTopPercent="2%h">
+        <TextView
+            style="@style/TextViewBlackNormal"
+            android:layout_centerVertical="true"
+            android:text="Change Device Name"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow_icon_dark"
+            app:layout_heightPercent="8%w"
+            app:layout_widthPercent="8%w"/>
+
+        <View
+            style="@style/BlackLine"/>
+    </uascent.com.percent.support.PercentRelativeLayout>
+    <!--Password Reset-->
+    <uascent.com.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_password_reset"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%h"
+        app:layout_marginLeftPercent="5%w"
+        app:layout_marginRightPercent="5%w"
+        app:layout_marginTopPercent="2%h">
+        <TextView
+            style="@style/TextViewBlackNormal"
+            android:layout_centerVertical="true"
+            android:text="Password Reset"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow_icon_dark"
+            app:layout_heightPercent="8%w"
+            app:layout_widthPercent="8%w"/>
+
+        <View
+            style="@style/BlackLine"/>
+    </uascent.com.percent.support.PercentRelativeLayout>
+</uascent.com.percent.support.PercentLinearLayout>

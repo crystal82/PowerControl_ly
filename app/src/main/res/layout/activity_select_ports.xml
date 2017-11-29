@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uascent.com.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_select_ports"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/iv_log"
+        layout="@layout/include_top_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <uascent.com.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_log"
+        app:layout_marginTopPercent="10%h">
+
+        <!--中间标识-->
+        <View
+            android:id="@+id/tag_center"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/iv_ports4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/iv_log"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/tag_center"
+            android:background="@drawable/shape_corner_round"
+            android:src="@mipmap/ports4"
+            app:layout_heightPercent="35%w"
+            app:layout_marginRightPercent="5%w"
+            app:layout_paddingPercent="2%w"
+            app:layout_widthPercent="35%w"/>
+
+        <ImageView
+            android:id="@+id/iv_ports8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/iv_log"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/tag_center"
+            android:background="@drawable/shape_corner_round"
+            android:src="@mipmap/ports8"
+            app:layout_heightPercent="35%w"
+            app:layout_marginLeftPercent="5%w"
+            app:layout_paddingPercent="2%w"
+            app:layout_widthPercent="35%w"/>
+
+        <TextView
+            style="@style/TextViewTag"
+            android:layout_alignLeft="@id/iv_ports4"
+            android:layout_alignRight="@id/iv_ports4"
+            android:layout_below="@+id/iv_ports4"
+            android:text="4 Ports"
+            app:layout_marginTopPercent="3%h"/>
+
+        <TextView
+            style="@style/TextViewTag"
+            android:layout_alignLeft="@id/iv_ports8"
+            android:layout_alignRight="@id/iv_ports8"
+            android:layout_below="@+id/iv_ports4"
+            android:text="8 Ports"
+            app:layout_marginTopPercent="3%h"/>
+
+    </uascent.com.percent.support.PercentRelativeLayout>
+</uascent.com.percent.support.PercentRelativeLayout>

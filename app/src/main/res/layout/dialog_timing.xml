@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_luminance"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_16dp"
+    android:background="@drawable/shape_dialog_corner_round"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/DialogTitle"
+        android:text="Timing Shutdown" />
+
+    <cn.carbswang.android.numberpickerview.library.NumberPickerView
+        android:id="@+id/picker_hour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginRight="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:contentDescription="picker_hour"
+        app:npv_DividerColor="@color/color090E0D"
+        app:npv_HintText="Hour"
+        app:npv_ItemPaddingHorizontal="5dp"
+        app:npv_ItemPaddingVertical="5dp"
+        app:npv_RespondChangeInMainThread="false"
+        app:npv_ShowCount="5"
+        app:npv_TextArray="@array/hour_display"
+        app:npv_TextColorHint="@color/color090E0D"
+        app:npv_TextColorNormal="@color/color656A67"
+        app:npv_TextColorSelected="@color/color090E0D"
+        app:npv_TextSizeNormal="18sp"
+        app:npv_TextSizeSelected="25sp"
+        app:npv_WrapSelectorWheel="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dialog_cancel"
+            android:layout_width="86dp"
+            android:layout_height="34dp"
+            android:background="@drawable/shape_btn_round"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_dialog_enter"
+            android:layout_width="86dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/shape_btn_round"
+            android:gravity="center"
+            android:text="Enter"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
